@@ -5,7 +5,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    api.get("products/")
+    api.get("")
       .then((res) => setProducts(res.data))
       .catch((err) => console.error(err));
   }, []);
